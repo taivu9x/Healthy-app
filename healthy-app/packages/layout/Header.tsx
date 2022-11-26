@@ -29,7 +29,7 @@ export const Header = () => {
   return (
     <header>
       <nav className='bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800'>
-        <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ml-32'>
+        <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-lg	'>
           <a href='https://flowbite.com' className='flex items-start'>
             <img src='/images/logo.png' className='mr-3 h-6 sm:h-9' alt='Healthy Logo' />
           </a>
@@ -47,7 +47,7 @@ export const Header = () => {
                 </li>
               ))}
               <li>
-                <div className='py-2 cursor-pointer'>
+                <div className='py-2 cursor-pointer relative'>
                   <Menu
                     className='hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'
                     size={30}
@@ -64,7 +64,8 @@ export const Header = () => {
                           <a
                             href={nav.href}
                             className='flex p-8 text-base justify-start border-b-2 border-b-gray-500'
-                            aria-current='page'>
+                            aria-current='page'
+                            onClick={handleHoverRing}>
                             {nav.text}
                           </a>
                         </li>

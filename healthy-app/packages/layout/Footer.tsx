@@ -17,7 +17,7 @@ export const Footer = () => {
     <footer>
       <div className='flex justify-between p-14 text-white dark:bg-gray-800'>
         {data.map((item, index) => (
-          <p>{item}</p>
+          <p key={index}>{item}</p>
         ))}
       </div>
     </footer>

@@ -4,6 +4,8 @@ import Challenge from './icons/challenge.svg';
 import Menu from './icons/menu.svg';
 import Info from './icons/info.svg';
 import Memo from './icons/memo.svg';
+import Cup from './icons/cup.svg';
+import Knife from './icons/knife.svg';
 
 const ICONS = {
   close: Close,
@@ -11,6 +13,8 @@ const ICONS = {
   menu: Menu,
   info: Info,
   memo: Memo,
+  cup: Cup,
+  knife: Knife,
 };
 
 export type IconName = keyof typeof ICONS;
