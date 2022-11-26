@@ -1,7 +1,5 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { Home } from '@/home';
 
-export default function Home() {
-  return <button className='text-white font-bold py-2 px-4 rounded bg-primary'>Button</button>;
+export default function HomePage() {
+  return <Home />;
 }

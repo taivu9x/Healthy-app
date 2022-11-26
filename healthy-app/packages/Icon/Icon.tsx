@@ -10,7 +10,7 @@ const ICONS = {
   challenge: Challenge,
   menu: Menu,
   info: Info,
-  meno: Memo,
+  memo: Memo,
 };
 
 export type IconName = keyof typeof ICONS;
