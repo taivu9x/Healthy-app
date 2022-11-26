@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: 100;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Thin.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: 300;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Light.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: 500;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: 700;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Noto Sans JP";
+    font-weight: 900;
+    src: local("Noto Sans JP"),
+      url("/fonts/NotoSansJP-Black.woff") format("woff");
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+    font-family: "Noto Sans JP", sans-serif;
+    color: inherit;
+  }
+
+  html {
+    @apply box-border text-gray-800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+
+  h4 {
+    @apply text-h4;
+  }
+
+  h5 {
+    @apply text-h5;
+  }
+
+  body {
+    @apply text-regular;
+  }
+}
+
+@layer utilities {
+  .minimized {
+    @apply h-0 w-0 border-none outline-none m-0 p-0 absolute opacity-0 !important;
+  }
+
+  .disabled {
+    @apply cursor-default pointer-events-none opacity-40 !important;
+  }
+}
