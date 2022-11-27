@@ -95,3 +95,17 @@
     @apply cursor-default pointer-events-none opacity-40 !important;
   }
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  margin-right: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #777;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffcc21;
+  border-radius: 10px;
+}

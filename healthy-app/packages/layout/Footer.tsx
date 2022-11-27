@@ -14,8 +14,9 @@ export const Footer = () => {
   ];
 
   return (
-    <footer>
-      <div className='flex justify-between p-14 text-white dark:bg-gray-800'>
+    <footer className='dark:bg-gray-800'>
+      {/* <div className='mx-auto smax-w-screen-lg flex justify-between items-center p-14 text-white '> */}
+      <div className='flex justify-between items-start mx-auto max-w-screen-lg text-white p-14	'>
         {data.map((item, index) => (
           <p key={index}>{item}</p>
         ))}

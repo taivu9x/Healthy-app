@@ -60,7 +60,7 @@ export const Meal = () => {
           {date.meal.map(meal => (
             <div
               style={{ backgroundImage: `url(${meal.img})` }}
-              className={classNames('text-white w-[232px] h-[232px] relative')}>
+              className={classNames('text-white w-[232px] h-[232px] relative bg-cover')}>
               <div className='text-white w-32 h-8 absolute bottom-0 left-0 p-2 bg-primary'>
                 {date.date}
                 {meal.name}
