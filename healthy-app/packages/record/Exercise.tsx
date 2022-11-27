@@ -54,7 +54,7 @@ export const Exercise = () => {
       <div
         className='flex justify-start items-center text-lg text-white py-1'
         style={{ fontWeight: 300 }}>
-        <div className='uppercase light w-24'> My Exercise</div>
+        <div className='uppercase light w-24 leading-6'> My Exercise</div>
         <div className='text-xl'>2021.05.21</div>
       </div>
       <div className='grid grid-cols-2 gap-10 text-white'>
