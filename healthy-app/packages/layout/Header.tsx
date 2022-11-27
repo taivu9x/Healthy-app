@@ -1,6 +1,7 @@
 import { Icon, IconName } from '@/Icon';
 import Menu from '../Icon/icons/menu.svg';
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '@/common/Container';
 
 export const Header = () => {
   const buttonMenu = useRef(null);
@@ -9,17 +10,17 @@ export const Header = () => {
     {
       name: 'memo',
       text: '自分の記録',
-      href: '#',
+      href: '/',
     },
     {
       name: 'challenge',
       text: 'チャレンジ',
-      href: '#',
+      href: 'record',
     },
     {
       name: 'info',
       text: 'お知らせ',
-      href: '#',
+      href: 'recommended',
     },
   ];
 
@@ -29,7 +30,7 @@ export const Header = () => {
   return (
     <header>
       <nav className='bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800'>
-        <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-lg	'>
+        <Container className='flex flex-wrap justify-between items-center'>
           <a href='https://flowbite.com' className='flex items-start'>
             <img src='/images/logo.png' className='mr-3 h-6 sm:h-9' alt='Healthy Logo' />
           </a>
@@ -76,7 +77,7 @@ export const Header = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </Container>
       </nav>
     </header>
   );

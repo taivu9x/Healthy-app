@@ -11,6 +11,7 @@ export const LayoutPublic = ({ children }: LayoutProps) => {
     <div className='flex flex-col min-h-screen container-xl'>
       <Header />
       <main className='flex flex-col items-center'>{children}</main>
+      
       <Footer />
     </div>
   );

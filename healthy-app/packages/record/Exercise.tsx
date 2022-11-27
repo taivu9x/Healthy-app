@@ -50,7 +50,7 @@ export const Exercise = () => {
     },
   ];
   return (
-    <Container className='bg-black px-6 py-3 w-[960px]'>
+    <Container className='bg-black px-6 py-3 w-[960px] mb-14'>
       <div
         className='flex justify-start items-center text-lg text-white py-1'
         style={{ fontWeight: 300 }}>
