@@ -24,6 +24,29 @@ export const Header = () => {
     },
   ];
 
+  const subNavs = [
+    {
+      text: '自分の記録',
+      href: '/',
+    },
+    {
+      text: '体重グラフ',
+      href: 'record',
+    },
+    {
+      text: '目標',
+      href: 'recommended',
+    },
+    {
+      text: 'コラム一覧',
+      href: 'recommended',
+    },
+    {
+      text: '設定',
+      href: 'recommended',
+    },
+  ];
+
   const handleHoverRing = () => {
     setIsHovering(prevState => !prevState);
   };
@@ -59,12 +82,12 @@ export const Header = () => {
                   {isHovering && (
                     <ul
                       id='mobile-menu'
-                      className='absolute top-16 right-0 text-left w-72 bg-gray-700 border border-b-1'>
-                      {navs.map((nav, index) => (
+                      className='absolute top-[58px] right-0 text-left w-72 bg-[#777777] text-white'>
+                      {subNavs.map((nav, index) => (
                         <li key={index}>
                           <a
                             href={nav.href}
-                            className='flex p-8 text-base justify-start border-b-2 border-b-gray-500'
+                            className='flex p-4 text-base justify-start border-b-[1px] border-b-gray-700 border-t-[1px] border-t-gray-600'
                             aria-current='page'
                             onClick={handleHoverRing}>
                             {nav.text}
